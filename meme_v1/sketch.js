@@ -34,13 +34,12 @@ function draw(){
 	var len = title.length;
 	var n = map(frameCount,0,100,0,len );
 
-	text( title.substring(0,n), width/2, height/2);
+	text( title.substring(0,n), width/2, 30);
 
 	var titleWidth = textWidth('MMP 210');
 
 	textSize(12)
 	noStroke();
-	textAlign(BOTTOM)
-	text(description,width/2 - titleWidth/2 ,height/ 2 + 40, titleWidth);
-
+	textAlign(CENTER,BOTTOM)
+	text(description.substring(0,n),width/2,height-20);
 }
